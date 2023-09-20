@@ -265,7 +265,7 @@ img:hover {
   transform: scale(1.1);
 }
 
-#menu{
+#menu {
   display: none;
 }
 
@@ -312,13 +312,32 @@ img:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 10px;
-    width: 100%;
+    font-size: 12px;
+    width: 90%;
+    height: 100%;
+    margin-top: -30px;
   }
-  #menu{
+  #menu {
     display: contents;
   }
-  .sticky-nav-options{
-    justify-content: space-between;
+  .sticky-nav-options {
+    display: flex;
+  }
+  .sticky-nav {
+    justify-content: end;
+  }
+  .sticky-nav-icons {
+    display: none;
+  }
+  .card {
+    width: 115px;
+  }
+  .card-info {
+    display: none;
+  }
+  .player-controls {
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
   }
 }
