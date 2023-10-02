@@ -20,8 +20,9 @@ body {
   background-color: #121212;
   flex: 1;
   border-radius: 1rem; /*16px */
-  overflow: auto;
+  overflow-x: hidden;
   padding: 0 1.5rem 0 1.5rem;
+  width: 100%;
 }
 .music-player {
   background-color: #000;
@@ -57,6 +58,7 @@ a {
 .nav-option a {
   font-size: 1rem;
   margin-left: 1rem;
+  color: white;
 }
 .library {
   background-color: #121212;
@@ -133,14 +135,15 @@ a {
   justify-content: center;
   align-items: center;
 }
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
 .nav-item {
   margin-right: 1.5rem;
 }
-@media (max-width: 1000px) {
-  .hide {
-    display: none;
-  }
-}
+
 .card {
   background-color: #232323;
   width: 150px;
@@ -270,6 +273,36 @@ img:hover {
 }
 
 @media screen and (max-width: 600px) {
+  HTML,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 90%;
+    z-index: 1;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .sidebar.active {
+    display: flex;
+  }
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+    color: aqua;
+  }
+  #menu-toggle {
+    background-color: #100f0f;
+    color: #fff;
+  }
   .main-content {
     flex-direction: column;
     width: 100%;
@@ -300,7 +333,7 @@ img:hover {
     padding: 5px;
   }
   .controls {
-    width: 80%;
+    width: 100%;
     font-size: 20px;
     justify-content: center;
     gap: 12px;
@@ -312,16 +345,19 @@ img:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     width: 90%;
     height: 100%;
-    margin-top: -30px;
+    margin-top: -40px;
   }
   #menu {
     display: contents;
   }
   .sticky-nav-options {
     display: flex;
+  }
+  #premium {
+    display: none;
   }
   .sticky-nav {
     justify-content: end;
@@ -330,7 +366,7 @@ img:hover {
     display: none;
   }
   .card {
-    width: 115px;
+    width: 116px;
   }
   .card-info {
     display: none;
@@ -339,5 +375,6 @@ img:hover {
     justify-content: center;
     width: 100%;
     margin: 10px;
+    margin-left: 22px;
   }
 }
