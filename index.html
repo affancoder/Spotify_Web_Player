@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify-Web Player : Music for everyone</title>
+    <title>Spotify : Music for everyone</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -33,7 +33,7 @@
             <i class="fa-solid fa-house"></i>
             <a href="/">Home</a>
           </div>
-          <div class="nav-option">
+          <div class="nav-option" id="search">
             <i class="fa-solid fa-magnifying-glass"></i>
             <a href="#">Search</a>
           </div>
@@ -83,7 +83,9 @@
                 >Install App</a
               >
             </button>
-            <i class="fa-regular fa-user nav-item"></i>
+            <a href="Animatedlogin/login.html" class="ani-log"
+              ><i class="fa-regular fa-user nav-item"></i
+            ></a>
             <!-- <i class="fa-solid fa-bars" id="menu"></i> -->
             <div class="navbar-toggle" id="menu">
               <button id="menu-toggle"><i class="fa-solid fa-list"></i></button>
@@ -287,6 +289,7 @@
               class="player-control-icon"
               style="opacity: 1; height: 2rem"
             />
+            <!-- <i class="fa-solid fa-2x fa-play-circle" id="masterPlay"></i> -->
             <img src="assets/player_icon4.png" class="player-control-icon" />
             <img src="assets/player_icon5.png" class="player-control-icon" />
           </div>
