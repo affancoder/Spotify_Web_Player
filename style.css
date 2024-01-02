@@ -285,6 +285,13 @@ a {
   padding: 0px 10px;
   justify-content: space-evenly;
 }
+
+.vol-bar{
+  width: 130px;
+  margin-top: 6px;
+  height: 6px;
+}
+
 h2:hover {
   cursor: pointer;
 }
