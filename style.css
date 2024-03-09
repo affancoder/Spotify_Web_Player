@@ -78,7 +78,7 @@ a {
   padding: 0.5rem 0.75rem;
 }
 
-.ani-log{
+.ani-log {
   color: #fff;
 }
 
@@ -159,18 +159,25 @@ a {
   margin-right: 1.5rem;
 }
 
+/* ------------------- Card -------------------- */
+
 .card {
   background-color: #232323;
   width: 150px;
+  height: auto;
   border-radius: 0.5rem;
   color: #fff;
   padding: 1rem;
   margin-left: 1.5rem;
   margin: 1rem;
 }
+.card:hover {
+  background-color: #333232;
+}
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  height: auto;
 }
 .card-img {
   width: 100%;
@@ -285,23 +292,45 @@ a {
   padding: 0px 10px;
   justify-content: space-evenly;
 }
-
-.vol-bar{
-  width: 130px;
-  margin-top: 6px;
-  height: 6px;
-}
-
 h2:hover {
   cursor: pointer;
 }
 img:hover {
   cursor: pointer;
   transform: scale(1.1);
+  transition: ease 1s;
+}
+
+.vol-bar {
+  width: 130px;
+  margin-top: 6px;
+  height: 6px;
 }
 
 #menu {
   display: none;
+}
+
+audio #musicPlayer {
+  background-color: black;
+  color: #1bd760;
+  width: 50px;
+}
+
+/* -------------- Music play ------------ */
+
+.btnplay {
+  background-color: #1bd760;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #100f0f;
+  margin-left: 80px;
+  cursor: pointer;
+  /* display: none; */
 }
 
 @media screen and (max-width: 600px) {
