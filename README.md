@@ -46,6 +46,10 @@ This is a Spotify clone developed using HTML, CSS, and a bit of JavaScript. The 
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## Deployement
+
+Live : https://spotify-delta.netlify.app/
+
 ## License
 
 This project is licensed under my project License.
